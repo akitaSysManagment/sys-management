@@ -1,0 +1,6 @@
+[submodule "sys-web"]
+	path = sys-web
+	url = git@github.com:akitaSysManagment/sys-web.git
+[submodule "sys-api"]
+	path = sys-api
+	url = git@github.com:akitaSysManagment/sys-api.git
