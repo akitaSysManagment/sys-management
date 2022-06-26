@@ -1,0 +1,7 @@
+version: '3'
+services:
+  compose-api:
+    container_name: sys-api
+    build: ./sys-api
+    ports:
+    - "8085:8085"
