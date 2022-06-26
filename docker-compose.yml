@@ -1,7 +1,19 @@
 version: '3'
 services:
-  compose-api:
+  sys-api:
     container_name: sys-api
     build: ./sys-api
     ports:
     - "8085:8085"
+    depends_on:
+      - sys-db
+  sys-db:
+    container_name: sys-db
+    image: postgres:14.4-bullseye
+    environment:
+      POSTGRES_DB: exampledb
+      POSTGRES_USER: exampleuser
+      POSTGRES_PASSWORD: examplepass
+    ports:
+      - "8888:5432"
+
