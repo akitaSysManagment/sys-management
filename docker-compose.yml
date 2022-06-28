@@ -13,7 +13,7 @@ services:
     environment:
       POSTGRES_DB: exampledb
       POSTGRES_USER: exampleuser
-      POSTGRES_PASSWORD: examplepass
+      POSTGRES_PASSWORD: pass
     ports:
       - "8888:5432"
 
